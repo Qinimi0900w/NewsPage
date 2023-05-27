@@ -1,0 +1,142 @@
+/* section */
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+  }
+  
+  .news_list {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .content_block {
+    width: 845px;
+    height: 270px;
+    display: flex;
+    text-align: left;
+    /* border: 1px solid black; */
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .img img {
+    margin-right: 20px;
+    width: 260px;
+    height: 230px;
+  }
+  
+  .subtitle {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .like_btn {
+    position: absolute;
+    right: 25px;
+  }
+  .iconLike{
+    color: rgb(74, 70, 70);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .iconLike:hover{
+    color: rgb(131, 122, 122);
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+  }
+  .red{
+    background-color: red;
+
+  }
+  .grey {
+    color: #858080;
+  }
+  
+  .txt_title {
+    width: 400px;
+    font-size: 24px;
+    color: black;
+  }
+  
+  .share_btn {
+    margin-top: 15px;
+  }
+  .hr{
+    color: darkgrey;
+    width: 845px;
+  }
+
+  @media screen and (max-width:900px) and (min-width:700px) {
+    .content_block{
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+      margin: auto;
+
+    }
+    .hr {
+      width: 50%;
+    }
+    .img img{
+      width: 400px;
+      height: 343px;
+    }
+    .like_btn {
+      position: absolute;
+      right: 35px;
+      top: 410px;
+    }
+  }
+  @media screen and (max-width:700px) and (min-width:500px) {
+    .content_block{
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+      margin: auto;
+
+    }
+    .hr {
+      width: 50%;
+    }
+    .img img{
+      width: 400px;
+      height: 343px;
+    }
+    .like_btn {
+      position: absolute;
+      right: 25px;
+      top: 410px;
+    }
+  }
+  @media screen and (max-width:500px) and (min-width:360px){
+    .content_block{
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 50px auto;
+      margin: auto;
+
+    }
+    .hr {
+      width: 50%;
+    }
+    .img img{
+      width: 300px;
+      height: 243px;
+    }
+    .like_btn {
+      position: absolute;
+      right: 0px;
+      top: 270px;
+    }
+  }

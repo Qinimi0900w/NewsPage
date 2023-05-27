@@ -1,0 +1,97 @@
+
+/* page */
+
+.btn_arrow{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.page_main {
+    position: relative;
+    margin: auto;
+    width: 845px;
+}
+
+.btn_like {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background-color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn_share{
+    border: none;
+    background-color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.main_content img{
+    width: 845px;
+}
+
+.grey {
+    color: #858080;
+    line-height: 24px;
+}
+.comment_content{
+    margin: 30px;
+}
+
+.comment_link{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-around;
+
+}
+
+.comment_link a{
+    color: #7E5BC2;
+;
+}
+
+.comment_subtxt{
+    padding-left: 50px;
+}
+
+.block_answer .fields_answer{
+    width: 274px;
+    height: 27px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+    margin: 5px;
+}
+.btn_answer{
+    background-color: #7E5BC2;
+    color: #fff;
+    width: 128px;
+    height: 27px;
+    border-radius: 10px;
+    border: none; 
+    font-family: 'Public Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+.mainFieldSnswer{
+    width: 346px;
+    height: 38px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+    padding: 15px;
+    margin: 10px;
+}
+.btn_mainfield{
+    background-color: #7E5BC2;
+    color: #fff;
+    width: 128px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+}
