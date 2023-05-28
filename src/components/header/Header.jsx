@@ -12,12 +12,12 @@ import { Link } from "react-router-dom";
 
 const ModalProfile = ({ active, setactive }) => {
     return (
-        <div className={active ? "modal_profile_active" : "modal_profile"} onClick={() => setactive(false)}>
+        <div className={active ? "modal_profile_active" : "modal_profile"} >
             <div className="modal_content">
-                <FontAwesomeIcon icon={faXmark} className="btnexit"  />
-                <Link to="">Мой профиль</Link>
+                <FontAwesomeIcon icon={faXmark} className="btnexit" onClick={() => setactive(false)}/>
+                <span>Мой профиль</span>
                 <hr style={{ color: 'ligthgrey', width: '140px' }} />
-                <Link to="" >Выйти</Link>
+                <span onClick={() => setactive(false)}>Выйти</span >
             </div>
         </div>
     )
@@ -25,17 +25,26 @@ const ModalProfile = ({ active, setactive }) => {
 
 const ModalBurger = ({ active, setactive }) => {
     return (
-        <div className={active ? "modal_burger_active" : "modal_burger"} onClick={() => setactive(false)}>
+        <div className={active ? "modal_burger_active" : "modal_burger"} >
             <div className="modal_content">
-                <FontAwesomeIcon icon={faXmark} className="btnexit"/>
-                <Link to="">Избранные новости</Link>
+                <FontAwesomeIcon icon={faXmark} className="btnexit"onClick={() => setactive(false)}/>
+                <span>Избранные новости</span>
+            </div>
+        </div>
+    )
+}
+const ModalSlider = ({ active, setactive }) => {
+    return (
+        <div className={active ? "modal_slider_active" : "modal_slider"} >
+            <div className="modal_content">
+                
             </div>
         </div>
     )
 }
 
 const Header = () => {
-    const [modalActive, setModalActive] = useState(true);
+    const [modalActive, setModalActive] = useState(false);
     const [modalActiveBur, setModalActiveBur] = useState(false);
     return (
         <>

@@ -35,9 +35,7 @@ const Aside = () => {
                     <label  htmlFor="fashion">Мода</label>
                 </div>
                 <br />
-                <button className="btn">
-                    <a href="">Применить</a>
-                </button>
+                <button className="btn">Применить</button>
             </form>
         </aside>
 

@@ -60,33 +60,25 @@
     }
   
   .btn {
-    margin-top: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #7E5BC2;
+    background-color: #7e5bc2;
     font-size: 16px;
     border-radius: 10px;
     width: 168px;
     height: 35px;
-    padding: 8px 10px;
+    padding: 5px 10px;
     border: none;
+    color: #fff;
   }
   .btn:hover{
     background-color: #fff;
     border: 1px solid #18191b;
     transition: background-color .5s;
     box-shadow: 1px 3px #7d7e83;
+    color: #000;
+    border-radius: 10px;
+
   }
-  
-  .btn a {
-    text-decoration: none;
-    color: #fff;
-  }
-  .btn a:hover {
-    text-decoration: none;
-    color: rgb(54, 57, 61);
-    transition: .5s ;
-  }
-  
   @media(max-width: 1200px) {
     .form {
       display: none;

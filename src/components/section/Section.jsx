@@ -1,11 +1,12 @@
 import React from "react";
 import "./section.css"
 import Share from "./../img/share-2.png"
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const Section = (props) => {
+    
     
     return (
         <>
