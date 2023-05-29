@@ -84,10 +84,13 @@
     }
     .hr {
       width: 50%;
+      margin: 0 auto ;
+
     }
     .img img{
       width: 400px;
       height: 343px;
+      margin-bottom: 20px;
     }
     .like_btn {
       position: absolute;
@@ -107,10 +110,13 @@
     }
     .hr {
       width: 50%;
+      margin: 0 auto ;
+
     }
     .img img{
       width: 400px;
       height: 343px;
+      margin-bottom: 20px;
     }
     .like_btn {
       position: absolute;
@@ -130,10 +136,13 @@
     }
     .hr {
       width: 50%;
+      margin: 30px auto ;
+
     }
     .img img{
       width: 300px;
       height: 243px;
+      margin-bottom: 20px;
     }
     .like_btn {
       position: absolute;

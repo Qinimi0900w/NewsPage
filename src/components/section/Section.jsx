@@ -12,7 +12,7 @@ const Section = (props) => {
         <>
             <div className="content_block">
                 <div className="img">
-                    <img src={props.img_url} alt="" />
+                    <img src={props.src} alt="" />
                 </div>
                 <div className="subtitle">
                     <div className="like_btn">
