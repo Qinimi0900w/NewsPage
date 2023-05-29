@@ -7,7 +7,6 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
 
 const ModalProfile = ({ active, setactive }) => {
@@ -17,7 +16,7 @@ const ModalProfile = ({ active, setactive }) => {
                 <FontAwesomeIcon icon={faXmark} className="btnexit" onClick={() => setactive(false)}/>
                 <span>Мой профиль</span>
                 <hr style={{ color: 'ligthgrey', width: '140px' }} />
-                <span onClick={() => setactive(false)}>Выйти</span >
+                <span>Выйти</span >
             </div>
         </div>
     )
@@ -27,10 +26,11 @@ const ModalBurger = ({ active, setactive }) => {
     return (
         <div className={active ? "modal_burger_active" : "modal_burger"} >
             <div className="modal_content">
-                <FontAwesomeIcon icon={faXmark} className="btnexit"onClick={() => setactive(false)}/>
+                <FontAwesomeIcon icon={faXmark} className="btnexit" onClick={() => setactive(false)}/>
                 <span>Избранные новости</span>
             </div>
         </div>
+        
     )
 }
 const ModalSlider = ({ active, setactive }) => {
@@ -49,7 +49,7 @@ const Header = () => {
     return (
         <>
             <header className="header_news">
-                <div className="all_logolink">
+                <div className="all_logolink" >
                     <div className="logo_pr">
                         <img src={Logo} alt="" />
                     </div>

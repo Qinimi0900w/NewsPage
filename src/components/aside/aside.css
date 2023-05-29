@@ -60,7 +60,6 @@
     }
   
   .btn {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #7e5bc2;
     font-size: 16px;
     border-radius: 10px;
@@ -71,11 +70,7 @@
     color: #fff;
   }
   .btn:hover{
-    background-color: #fff;
-    border: 1px solid #18191b;
-    transition: background-color .5s;
     box-shadow: 1px 3px #7d7e83;
-    color: #000;
     border-radius: 10px;
 
   }
