@@ -33,14 +33,19 @@
 }
 .main_content img{
     width: 845px;
+    margin-bottom: 20px;
 }
 
 .grey {
     color: #858080;
     line-height: 24px;
 }
+
+
+/* comment  */
 .comment_content{
-    margin: 30px;
+    margin: 30px auto;
+    width: 845px;
 }
 
 .comment_link{
@@ -78,7 +83,10 @@
     font-family: 'Public Sans', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
-.mainFieldSnswer{
+.btn_answer_litle{
+    display: none;
+}
+.mainFieldAnswer{
     width: 346px;
     height: 38px;
     border-radius: 10px;
@@ -87,6 +95,9 @@
     padding: 15px;
     margin: 10px;
 }
+.btn_mainFieldAnswer_litle{
+    display: none;
+}
 .btn_mainfield{
     background-color: #7E5BC2;
     color: #fff;
@@ -94,4 +105,106 @@
     height: 38px;
     border-radius: 10px;
     border: none;
+}
+
+@media screen and (max-width:768px) {
+    .page_main{
+        width: 500px;
+        margin: auto;
+    }
+    .main_content img{
+        width: 490px;
+        height: 490px;
+    }
+    .comment_content {
+        margin: 30px auto;
+        width: 490px;
+    }
+
+}
+@media screen and (max-width:380px) and (min-width:320px) {
+    .page_main{
+        width: 300px;
+        margin: auto;
+    }
+    .main_content img{
+        width: 300px;
+        height: 300px;
+    }
+    .comment_content {
+        margin: 30px auto;
+        width: 300px;
+    }
+    
+    .comment_link{
+        display: flex;
+        align-items: start;
+        width: 200px;
+        justify-content: space-around;
+    
+    }
+    
+    .comment_link a{
+        color: #7E5BC2;
+    ;
+    }
+    
+    .comment_subtxt{
+        padding-left: 50px;
+    }
+    .block_answer{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .block_answer .fields_answer{
+        width: 150px;
+        height: 27px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 1px solid #D9D9D9;
+        margin: 5px;
+    }
+    
+    .btn_answer{
+        display: none;
+    }
+    .btn_answer_litle{
+        display: inline-block;
+        background-color: #7E5BC2;
+        color: #fff;
+        width: 40px;
+        height: 27px;
+        border-radius: 10px;
+        border: none; 
+    }
+    .mainblock_answer b{
+        display: none;
+    }
+    .mainblock_answer {
+        display: flex;
+        align-items: center;
+    }
+    .mainFieldAnswer{
+        width: 250px;
+        height: 38px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 1px solid #D9D9D9;
+        padding: 15px;
+        margin-right: 10px;
+    }
+    .btn_mainfield{
+        display: none;
+    }
+    .btn_mainFieldAnswer_litle{
+        background-color: #7E5BC2;
+        color: #fff;
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        border: none;
+        display: inline;
+    }
+
 }

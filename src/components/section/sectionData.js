@@ -7,22 +7,22 @@ import Jpg5 from "./../img/img5.png";
 export const sectionData = [
     {
         id: 1,
-        img_url:Jpg1,
+        src:Jpg1,
     },
     {
         id: 2,
-        img_url:Jpg2,
+        src:Jpg2,
     },
     {
         id: 3,
-        img_url:Jpg3,
+        src:Jpg3,
     },
     {
         id: 4,
-        img_url:Jpg4,
+        src:Jpg4,
     },
     {
         id: 5,
-        img_url:Jpg5,
+        src:Jpg5,
     }
 ]

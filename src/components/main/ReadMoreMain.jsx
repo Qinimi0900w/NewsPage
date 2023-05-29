@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "../header/Header"
 import Footer from "../footer/Footer"
-import ReadMoreSection from "../readMorePage/ReadMoreSection";
 import "./../readMorePage/readMorePage.css";
+import ReadMoreSection5 from "../readMorePage/PageMore5/ReadMoreSection5";
 
 const ReadMoreMain = () => {
     return (
         <>
         <Header/>
-        <ReadMoreSection/>
+        <ReadMoreSection5/>
         <Footer/>
         </>
     )

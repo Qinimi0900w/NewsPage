@@ -1,5 +1,7 @@
 import React from "react";
 import "./readMorePage.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 
 const SectionComment = () => {
@@ -38,7 +40,8 @@ const SectionComment = () => {
                                 <b>Вы</b>
                             </label>
                             <input type="text" className="fields_answer" />
-                            <input type="submit" defaultValue="Ответить" className="btn_answer" />
+                            <button className="btn_answer">Ответить</button>
+                            <button className="btn_answer_litle"><FontAwesomeIcon icon={faArrowUp} style={{ color: "#fafbff", }} /></button>
                         </div>
                     </div>
                     <p>
@@ -59,10 +62,11 @@ const SectionComment = () => {
                         </label>
                         <input
                             type="text"
-                            className="mainFieldSnswer"
+                            className="mainFieldAnswer"
                             placeholder="Напишите комментарий"
                         />
                         <input type="submit" defaultValue="Ответить" className="btn_mainfield" />
+                        <button className="btn_mainFieldAnswer_litle"><FontAwesomeIcon icon={faArrowUp} style={{ color: "#fafbff", }} /></button>
                     </div>
                 </div>
             </div>
