@@ -2,15 +2,15 @@ import React from "react";
 import Header from "../header/Header"
 import Footer from "../footer/Footer"
 import "./../readMorePage/readMorePage.css";
-import ReadMoreSection from "../readMorePage/PageMore5/ReadMoreSection5";
+import ReadMoreSection2 from "../readMorePage/PageMore5/ReadMoreSection5";
 
-const ReadMoreMain = () => {
+const Read2MoreMain = () => {
     return (
         <>
         <Header/>
-        <ReadMoreSection/>
+        <ReadMoreSection2/>
         <Footer/>
         </>
     )
 }
-export default ReadMoreMain;
+export default Read2MoreMain;

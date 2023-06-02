@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 import Logo from "./../img/logo.png";
 import Slider from "./../img/sliders.png"
@@ -11,12 +12,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const ModalProfile = ({ active, setactive }) => {
     return (
-        <div className={active ? "modal_profile_active" : "modal_profile"} >
-            <div className="modal_content">
+        <div className={active ? "modal_profile_active" : "modal_profile"} onClick={() => setactive(false)} >
+            <div className={active ? "modal_content_profile_active" : "modal_content_profile"} onClick={e =>e.stopPropagation()}>
                 <FontAwesomeIcon icon={faXmark} className="btnexit" onClick={() => setactive(false)}/>
-                <span>Мой профиль</span>
+                <Link to="/PersonalPage">Мой профиль</Link>
                 <hr style={{ color: 'ligthgrey', width: '140px' }} />
-                <span>Выйти</span >
+                <Link to="">Выйти</Link >
             </div>
         </div>
     )
@@ -24,10 +25,10 @@ const ModalProfile = ({ active, setactive }) => {
 
 const ModalBurger = ({ active, setactive }) => {
     return (
-        <div className={active ? "modal_burger_active" : "modal_burger"} >
-            <div className="modal_content">
+        <div className={active ? "modal_burger_active" : "modal_burger"} onClick={() => setactive(false)}>
+            <div className={active ? "modal_content_burger_active" : "modal_content_burger"} onClick={e =>e.stopPropagation()}>
                 <FontAwesomeIcon icon={faXmark} className="btnexit" onClick={() => setactive(false)}/>
-                <span>Избранные новости</span>
+                <Link to="/FavoritePage">Избранные новости</Link>
             </div>
         </div>
         
@@ -49,7 +50,7 @@ const Header = () => {
     return (
         <>
             <header className="header_news">
-                <div className="all_logolink" >
+                <div className="all_logolink d-flex justify-content-around align-items-center" >
                     <div className="logo_pr">
                         <img src={Logo} alt="" />
                     </div>

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Aside from "../aside/Aside";
-import Section from "../section/Section";
+import PersonalSection from "./PersonalSection";
 import { sectionData } from "../section/sectionData";
 import Jpg1 from "./../img/img1.png"
 import Jpg2 from "./../img/img2.png";
@@ -8,7 +8,7 @@ import Jpg3 from "./../img/img3.png";
 import Jpg4 from "./../img/img4.png";
 import Jpg5 from "./../img/img5.png";
 
-const Home = () => {
+const Personal= () => {
     // const items = sectionData.map((item) => {
     //     return (
     //         <Fragment key ={item.id} >
@@ -20,22 +20,21 @@ const Home = () => {
     return (
         <>
             <div className="main">
-                <Aside />
                 <section className="news_list">
                     {/* {items} */}
-                    <Section 
+                    <PersonalSection 
                      src={Jpg1}
                      />
-                    <Section
+                    <PersonalSection
                     src={Jpg2}
                     />
-                    <Section
+                    <PersonalSection
                     src={Jpg3}
                     />
-                    <Section
+                    <PersonalSection
                     src={Jpg4}
                     />
-                    <Section
+                    <PersonalSection
                     src={Jpg5}
                     />
                 </section>
@@ -44,4 +43,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Personal;

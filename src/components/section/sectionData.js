@@ -1,4 +1,4 @@
-import Jpg1 from "./../img/img1.png"
+import Jpg1 from "./../img/img1.png";
 import Jpg2 from "./../img/img2.png";
 import Jpg3 from "./../img/img3.png";
 import Jpg4 from "./../img/img4.png";

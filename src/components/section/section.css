@@ -126,13 +126,11 @@
   }
   @media screen and (max-width:500px) and (min-width:360px){
     .content_block{
-      width: 50%;
+      width: 90%;
       height: auto;
       display: flex;
       flex-wrap: wrap;
-      padding: 0 50px auto;
-      margin: auto;
-
+      margin: 0 auto;
     }
     .hr {
       width: 50%;
@@ -146,7 +144,7 @@
     }
     .like_btn {
       position: absolute;
-      right: 0px;
+      right: 25px;
       top: 270px;
     }
   }

@@ -8,7 +8,7 @@ const FavMain = () => {
     return (
         <>
             <FavHeader />
-            <div className="title">
+            <div className="Favtitle">
                 <p>Избранные сообщение</p>
             </div>
             <FavHome/>

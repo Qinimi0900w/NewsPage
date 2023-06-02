@@ -1,12 +1,12 @@
 import React from "react";
-import "./section.css"
+import "./../section/section.css"
 import Share from "./../img/share-2.png"
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 
 
-const Section = (props) => {
+
+const PersonalSection = (props) => {
     
     
     return (
@@ -17,7 +17,7 @@ const Section = (props) => {
                 </div>
                 <div className="subtitle">
                     <div className="like_btn">
-                        <FontAwesomeIcon icon={faHeart} className="iconLike" id="iconLike" /*onClick={likeBtn}*/ />
+                    <FontAwesomeIcon icon={faTrashCan} style={{color: "#8d2a2a",}} />
                     </div>
                     <div className="subtitle">
                         <p className="grey">
@@ -30,7 +30,7 @@ const Section = (props) => {
                             Class aptent taciti sociosqu ad litora torquent per conubinostra,
                             perinceptos himenaeos.
                         </p>
-                        <Link to="/ReadMorePage">Читать дальше&gt;&gt;</Link>
+                        <span>Читать дальше&gt;&gt;</span>
                         <div className="share_btn">
                             <span>
                                 <img src={Share} alt="" />
@@ -45,4 +45,4 @@ const Section = (props) => {
     )
 }
 
-export default Section;
+export default PersonalSection;

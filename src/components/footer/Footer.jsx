@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./../img/logo.png";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -9,10 +10,10 @@ const Footer = () => {
             <img src={Logo} alt="" />
             <div className="fft">
                 <p>
-                    <a href="">Мой профиль</a>
+                    <Link to="/PersonalPage">Мой профиль</Link>
                 </p>
                 <p>
-                    <a href="">Избранные новости</a>
+                    <Link to="/FavoritePage">Избранные новости</Link>
                 </p>
             </div>
         </footer>
