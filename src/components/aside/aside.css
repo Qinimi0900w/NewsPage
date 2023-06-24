@@ -59,7 +59,7 @@
       background-color: #e9ecef;
     }
   
-  .btn {
+  .btnAside {
     background-color: #7e5bc2;
     font-size: 16px;
     border-radius: 10px;
@@ -69,8 +69,8 @@
     border: none;
     color: #fff;
   }
-  .btn:hover{
-    box-shadow: 1px 3px #7d7e83;
+  .btnAside:hover{
+    box-shadow: 1px 3px #bdbec5;
     border-radius: 10px;
 
   }

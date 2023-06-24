@@ -1,42 +1,46 @@
 import FavSection from "./FavSection";
-import Jpg1 from "./../img/img1.png"
-import Jpg2 from "./../img/img2.png";
-import Jpg3 from "./../img/img3.png";
-import Jpg4 from "./../img/img4.png";
-import Jpg5 from "./../img/img5.png";
+import { useState,useEffect,Fragment } from "react";
 
 const FavHome = () => {
-    // const items = sectionData.map((item) => {
-    //     return (
-    //         <Fragment key ={item.id} >
-    //             < Section 
-    //                 img={item.img_url}
-    //         />
-    //         </Fragment>
-            
-    //     )
-    // })
+    const [posts, setPosts] = useState([]);
+    const [item,setItem] = useState([]);
+
+    const getPosts = async () => {
+        try {
+            const url = 'http://localhost:3001/sectionData';
+
+            const response = await fetch(url);
+            const data = await response.json();
+            setPosts(data);
+        } catch (error) {
+            console.error("Error fetching posts:", error);
+        }
+    };
+
+    useEffect(() => {
+        getPosts()
+    }, []);
+
 
     return (
         <>
             <div className="main">
                 <section className="news_list">
-                    {/* {items} */}
-                    <FavSection 
-                     src={Jpg1}
-                     />
-                    <FavSection
-                    src={Jpg2}
-                    />
-                    <FavSection
-                    src={Jpg3}
-                    />
-                    <FavSection
-                    src={Jpg4}
-                    />
-                    <FavSection
-                    src={Jpg5}
-                    />
+                {
+                        posts.map((item) => {
+                            return (
+                                <Fragment key={item.id} >
+                                    <FavSection 
+                                    id={item.id}
+                                    img={item.img}
+                                    title={item.title}
+                                    text={item.text}
+                                    onClickLike={()=>console.log(1)}
+                                    />
+                                </Fragment>
+                            )
+                        })
+                    }
                 </section>
             </div>
         </>

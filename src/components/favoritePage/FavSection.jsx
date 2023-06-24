@@ -1,35 +1,56 @@
 import React from "react";
 import "./../section/section.css";
 import Share from "./../img/share-2.png"
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink, useParams } from "react-router-dom";
+import { useState } from "react";
+import redLike from "../img/redLike.png"
+import heard from "../img/heart.png"
 
 
-const FavSection = (props) => {
-    
-    
+const FavSection = ({ img, title, text, date }) => {
+    const { id } = useParams;
+    const [like, setLike] = useState(true);
+
+
+    const onClickLike = () => {
+        setLike(!like);
+    };
+
+    const handleAddToCart = () => {
+        const data = { img, id, title, text };
+        const postList = JSON.parse(localStorage.getItem("postData")) || [];
+
+        const isDuplicate = postList.some((item) => item.id === id);
+        if (!isDuplicate) {
+            const list = [...postList, data];
+            localStorage.setItem("postData", JSON.stringify(list));
+        }
+    };
+
     return (
         <>
             <div className="content_block">
                 <div className="img">
-                    <img src={props.src} alt="" />
+                    <img src={img} alt="" />
                 </div>
                 <div className="subtitle">
-                    <div className="like_btn">
-                        <FontAwesomeIcon icon={faHeart} style={{color: "#ee1717",}} className="iconLike" id="iconLike"/>
+                    <div className="like_btn" onClick={handleAddToCart}>
+
+                        <img src={like ? redLike : heard} onClick={onClickLike} alt="" />
+
                     </div>
                     <div className="subtitle">
                         <p className="grey">
-                            <span className="grey">29.11.2022</span>
+                            <span className="grey">{date}</span>
                             <br />
                             <br /> <span className="txt_title">
-                                Заголовок новости
-                            </span> <br /> <br /> Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Nunc vulpuibero etvelit interdac aliquet odio mattis.
-                            Class aptent taciti sociosqu ad litora torquent per conubinostra,
-                            perinceptos himenaeos.
+                                {title}
+                            </span> <br /> <br />
+                            {text}
                         </p>
-                        <span>Читать дальше&gt;&gt;</span>
+                        <button className="link_btn" >
+                            <NavLink to={`/ReadMore/${id}`}>Читать дальше&gt;&gt;</NavLink>
+                        </button>
                         <div className="share_btn">
                             <span>
                                 <img src={Share} alt="" />

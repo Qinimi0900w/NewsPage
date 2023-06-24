@@ -1,0 +1,39 @@
+{
+    "sectionData": [
+        {
+            "id": 1,
+            "date":"29.11.2022",
+            "title": "Заголовок новости",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulpuibero etvelit interdac aliquet odio mattis.Class aptent taciti sociosqu ad litora torquent per conubinostra,perinceptos himenaeos.",
+            "img": "https://ibb.co/6gGWtsx"
+        },
+        {
+            "id": 2,
+            "date":"29.11.2022",
+            "title": "Заголовок новости",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulpuibero etvelit interdac aliquet odio mattis.Class aptent taciti sociosqu ad litora torquent per conubinostra,perinceptos himenaeos.",
+            "img": "https://ibb.co/8DxxyZN"
+        },
+        {
+            "id": 3,
+            "date":"29.11.2022",
+            "title": "Заголовок новости",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulpuibero etvelit interdac aliquet odio mattis.Class aptent taciti sociosqu ad litora torquent per conubinostra,perinceptos himenaeos.",
+            "img": "https://ibb.co/gP7045S"
+        },
+        {
+            "id": 4,
+            "date":"29.11.2022",
+            "title": "Заголовок новости",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulpuibero etvelit interdac aliquet odio mattis.Class aptent taciti sociosqu ad litora torquent per conubinostra,perinceptos himenaeos.",
+            "img": "https://ibb.co/nfKK3py"
+        },
+        {
+            "id": 5,
+            "date":"29.11.2022",
+            "title": "Заголовок новости",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulpuibero etvelit interdac aliquet odio mattis.Class aptent taciti sociosqu ad litora torquent per conubinostra,perinceptos himenaeos.",
+            "img": "https://ibb.co/1JbRvwT"
+        }
+    ]
+}

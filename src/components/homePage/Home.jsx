@@ -1,43 +1,48 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import Aside from "../aside/Aside";
 import Section from "../section/Section";
-import { sectionData } from "../section/sectionData";
-import Jpg1 from "./../img/img1.png"
-import Jpg2 from "./../img/img2.png";
-import Jpg3 from "./../img/img3.png";
-import Jpg4 from "./../img/img4.png";
-import Jpg5 from "./../img/img5.png";
+
 
 const Home = () => {
-    // const items = sectionData.map((item) => {
-    //     return (
-    //         <Fragment key ={item.id} >
-    //             <Section img={item.src}/>
-    //         </Fragment>   
-    //     )
-    // })
+    const [posts, setPosts] = useState([]);
+
+    const getPosts = async () => {
+        try {
+            const url = 'http://localhost:3001/sectionData';
+
+            const response = await fetch(url);
+            const data = await response.json();
+            setPosts(data);
+        } catch (error) {
+            console.error("Error fetching posts:", error);
+        }
+    };
+
+    useEffect(() => {
+        getPosts()
+    }, []);
+
 
     return (
         <>
             <div className="main">
                 <Aside />
                 <section className="news_list">
-                    {/* {items} */}
-                    <Section 
-                     src={Jpg1}
-                     />
-                    <Section
-                    src={Jpg2}
-                    />
-                    <Section
-                    src={Jpg3}
-                    />
-                    <Section
-                    src={Jpg4}
-                    />
-                    <Section
-                    src={Jpg5}
-                    />
+                    {
+                        posts.map((item) => {
+                            return (
+                                <Fragment key={item.id} >
+                                    <Section 
+                                    id={item.id}
+                                    img={item.img}
+                                    title={item.title}
+                                    text={item.text}
+                                    onPlus={()=>console.log(1)}
+                                    />
+                                </Fragment>
+                            )
+                        })
+                    }
                 </section>
             </div>
         </>
